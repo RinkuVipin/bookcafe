@@ -1,0 +1,125 @@
+@media only screen and (max-width:1200px){
+    
+    .row { padding: 0 2%; }
+    
+    .hero-text{ padding: 0 2%; }
+}
+
+
+@media only screen and (max-width:1023px){
+    
+    body { font-size: 17px; }
+    section { padding: 30px 0; }
+    h1 {font-size: 200%;}
+    
+    .section-blog h2 { font-size: 180%; }
+    .section-blog h4 { font-size: 95%; }
+    
+    .fav-overlay-top { display: none; }
+    .fav-overlay-bottom { display: none; }
+    
+    .procedure-box{ margin-top: 20px; }
+    .step-phone { width: 50%; display: block; margin-left: auto; margin-right: auto; }
+    .number-step div {
+        width: 40px;
+        height: 40px;
+        padding: 3px;
+    }
+    .btn-store img {width: 120px; }
+    
+    .city-info h3 { font-size: 110%; }
+    .city-info ion-icon {
+        width: 14px;
+        margin-right: 0;
+    }
+    
+    .list-signup {
+        width: 100%;
+        margin-left: 0;
+    }
+    .signup-btn-premium a:link, .signup-btn-premium a:visited,
+    .signup-btn-other a:link, .signup-btn-other a:visited  {
+        margin-left: 16%;
+    }
+    
+    .form-contact { width: 80%; }
+    
+    .list-nav li, .list-social li { margin: 0px 6px; }
+    .list-social ion-icon { font-size: 20px; }
+}
+
+
+@media only screen and (max-width:767px){
+    
+    body { font-size: 16px; }
+    .col { width : 100%; }
+    .row, .hero-text{ padding: 0 4%; }
+    
+    .navigation-div { margin: 0px 30px 0px 20px; }
+    .main-navigation { display: none; }
+    .navigation-menu { display: inline-block; }
+    .main-navigation { 
+        float: left;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+    .main-navigation li { 
+        display: block;
+        padding: 10px 0px;
+    }
+    .main-navigation li a:link,
+    .main-navigation li a:visited{
+        border: 0;
+        font-size: 100%;
+    }
+    .sticky-nav .main-navigation li a:link,
+    .sticky-nav .main-navigation li a:visited { padding: 20px 0; }
+    .sticky-nav .main-navigation { margin-top: 4px; }
+    .sticky-nav .navigation-menu { margin-top: 20px; font-size: 30px; }
+    
+    .section-blog h2 {font-size: 160%;}
+    .section-block { margin-top: 20px; margin-bottom: 20px; } 
+    .section-blog-title {margin-bottom: 4px;}
+    
+    
+    .signup-btn-premium a:link, .signup-btn-premium a:visited,
+    .signup-btn-other a:link, .signup-btn-other a:visited  {
+        margin-left: 36%;
+    }
+    
+    .step-phone { margin: 0 auto; }
+    .btn-store img { width: 100px; height: 40px;}
+    .number-step:last-of-type { margin-bottom: 40px; }
+    .number-step { margin-bottom: 20px; }
+    .number-step div {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+    }
+    
+    .list-city { display: none; }
+    
+    .section-testimonial-title { font-size: 120%; font-weight: 600; }
+    .list-testimonial h4 { visibility: visible; }
+    cite { display: none; }
+    
+    .form-contact { width: 100%; }
+    .list-label, .list-label-find { margin-top: 20px; margin-bottom: 10px}
+    .list-label-letter {margin-top: 25px; margin-bottom: 5px}
+    .section-contacts button { margin: 12px 2px 6px 2px; left: 50%; }
+        
+    footer { padding: 20px 0; }
+    .list-nav li, .list-social li { margin: 0px 4px; }
+}
+
+
+@media only screen and (max-width:480px){
+    
+    .hero-text{ margin-top: 8%; }
+    .number-step div { margin-right: 8px; margin-bottom: 20px;}
+    .signup-btn-premium a:link, .signup-btn-premium a:visited,
+    .signup-btn-other a:link, .signup-btn-other a:visited  {
+        margin-left: 28%;
+    }
+    .offer-book {display: none;}
+}

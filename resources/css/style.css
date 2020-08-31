@@ -1,0 +1,992 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    color: #2f2f2f;
+    font-family: 'Crimson Text', 'Bree Serif', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.clearix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(21, 20, 20, 0.8), rgba(21, 20, 20, 0.8)), url(img/fox_book_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/*--------------------------------------------------------
+                CAPTION AND BUTTONS ON THE CENTER
+/*--------------------------------------------------------*/
+
+.hero-text {
+    position: absolute;
+    width: 100%;
+    max-width: 1140px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 30px;
+    color: #ddd8d8;
+    font-size: 240%;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+/*-------------------- BUTTONS ------------------------*/
+
+.hero-text a:link,
+.hero-text a:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 600px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 1px solid rgb(213, 0, 0);
+}
+
+.hero-text a:hover,
+.hero-text a:active {
+    background-color: rgb(187, 0, 0);
+    border: 1px solid rgb(187, 0, 0);
+}
+
+.signup-btn:link,
+.signup-btn:visited {
+    color: white;
+    background-color: rgb(213, 0, 0);
+    margin-right: 15px;
+}
+
+.know-more-btn:link,
+.know-more-btn:visited {
+    color: rgb(250, 245, 245);
+}
+
+.know-more-btn:hover,
+.know-more-btn:active {
+    color: white;
+}
+
+/*--------------------------------------------------------
+                NAVIGATION BAR ON THE TOP
+/*--------------------------------------------------------*/
+
+.navigation-div {
+    margin: 0px 50px 0px 30px;
+}
+
+.logo-img {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/*-------------------- BUTTONS ------------------------*/
+
+.main-navigation {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-navigation li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.main-navigation li a:link,
+.main-navigation li a:visited {
+    padding: 5px 0px;
+    color: rgb(213, 0, 0);
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-navigation li a:hover,
+.main-navigation li a:active {
+    border-bottom: 2px solid rgb(213, 0, 0);
+}
+
+/*--------------------------------------------------------
+                SECTION ON THE BLOG
+/*--------------------------------------------------------*/
+
+section {
+    padding: 40px 0px;
+}
+
+.section-blog a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-blog h2,
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.section-blog h2 {
+    font-size: 200%;
+    color: rgb(213, 0, 0);
+}
+
+.section-blog h4 {
+    font-size: 100%;
+    margin: 8px 0px 15px 0px;
+}
+
+.section-blog h4:after {
+    display: block;
+    background-color: rgb(213, 0, 0);
+    width: 120px;
+    height: 2px;
+    content: " ";
+    margin: auto;
+    margin-top: 12px;
+}
+
+.section-blog-title {
+    margin: 12px 0px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 100%;
+    padding-bottom: 4px;
+    border-bottom: 2px solid white;
+}
+
+.section-blog-title:hover {
+    border-bottom: 2px solid rgb(213, 0, 0);
+}
+
+.blog-post-img {
+    height: 200px;
+    width: 100%;
+    margin-right: 10px;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.blog-post-img:hover {
+    opacity: 0.7;
+}
+
+.section-blog p {
+    line-height: 130%;
+    text-align: justify;
+}
+
+
+
+/*--------------------------------------------------------
+            SECTION ON THE FAVOURITE BOOKS
+/*--------------------------------------------------------*/
+
+.favourite-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    font-size: 120%;
+}
+
+.favourite-title:after {
+    display: block;
+    background-color: rgb(213, 0, 0);
+    width: 120px;
+    height: 2px;
+    content: " ";
+    margin: auto;
+    margin-top: 12px;
+}
+
+.list-favourite {
+    list-style: none;
+    width: 100%;
+}
+
+.list-favourite li {
+    display: block;
+    float: left;
+    width: 20%;
+    height: 50%;
+}
+
+.img-favourite {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: url(../css/img/Geometric_Shader.png);
+    opacity: 1;
+}
+
+.img-favourite img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.img-favourite img:not(:hover) {
+    opacity: 0.7;
+    object-fit: cover;
+}
+
+/*------------------------ OVERLAY EFFECT ----------------------------*/
+
+.fav-container {
+    position: relative;
+}
+
+.fav-overlay-bottom,
+.fav-overlay-top {
+    position: absolute;
+    float: left;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.fav-overlay-bottom {
+    bottom: 0;
+}
+
+.fav-container:hover .fav-overlay-bottom {
+    opacity: 1;
+    color: white;
+}
+
+.fav-overlay-top {
+    top: 0;
+}
+
+.fav-container:hover .fav-overlay-top {
+    opacity: 1;
+    color: white;
+}
+
+/*--------------------------------------------------------
+                SECTION ON THE PROCEDURES
+/*--------------------------------------------------------*/
+
+.section-procedures {
+    margin-top: 0;
+    background-color: #F0F0F0;
+}
+
+.section-procedures h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.section-procedures h2:after {
+    display: block;
+    background-color: rgb(213, 0, 0);
+    width: 120px;
+    height: 2px;
+    content: " ";
+    margin: auto;
+    margin-top: 12px;
+}
+
+.procedure-box {
+    margin-top: 30px;
+}
+
+.procedure-box:first-child {
+    padding: 3%;
+    text-align: right;
+}
+
+.procedure-box:last-child {
+    padding: 3%;
+    text-align: left;
+}
+
+.step-phone {
+    width: 40%;
+}
+
+.number-step {
+    margin-bottom: 30px;
+}
+
+.number-step div {
+    color: rgb(213, 0, 0);
+    border: 2px solid rgb(213, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 140%;
+    margin-right: 25px;
+}
+
+.number-step:last-of-type {
+    margin-bottom: 60px;
+}
+
+.btn-store img {
+    height: 50px;
+    margin-right: 10px;
+    width: 140px;
+}
+
+.btn-store {
+    text-decoration: none;
+}
+
+
+
+/*--------------------------------------------------------
+                SECTION ON THE CITIES
+/*--------------------------------------------------------*/
+
+.section-city {
+    width: 100%;
+    margin-right: 0;
+}
+
+.section-city h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.section-city h2:after {
+    display: block;
+    background-color: rgb(213, 0, 0);
+    width: 120px;
+    height: 2px;
+    content: " ";
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.list-city {
+    width: 23%;
+    list-style: none;
+}
+
+.list-city img {
+    height: 200px;
+    width: 100%;
+    float: left;
+}
+
+.city-info {
+    list-style: none;
+    width: 23%;
+}
+
+.city-info li {
+    margin-bottom: 4px;
+}
+
+.city-info h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.city-info a:link,
+.city-info a:visited {
+    color: rgb(213, 0, 0);
+    text-decoration: none;
+    border-bottom: 2px solid rgb(213, 0, 0);
+    transition: border-bottom 0.5s, color 0.5s;
+}
+
+.city-info a:hover,
+.city-info a:active {
+    color: black;
+    border-bottom: 2px solid transparent;
+}
+
+.city-info h5 {
+    display: inline-block;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.city-info ion-icon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: rgb(213, 0, 0);
+    margin-right: 4px;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -6px;
+}
+
+
+
+/*--------------------------------------------------------
+            SECTION ON THE USER TESTIMONIALS
+/*--------------------------------------------------------*/
+
+.section-testimonial {
+    background-image: linear-gradient(rgba(21, 20, 20, 0.7), rgba(21, 20, 20, 0.7)), url(img/bg_testimonial_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-testimonial-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    color: #ddd8d8;
+}
+
+.section-testimonial-title:after {
+    display: block;
+    background-color: rgb(213, 0, 0);
+    width: 120px;
+    height: 2px;
+    content: " ";
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.list-testimonial {
+    color: #ddd8d8;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 400%;
+}
+
+blockquote {
+    padding: 2px;
+    font-style: italic;
+    line-height: 140%;
+}
+
+.list-testimonial h4 {
+    visibility: hidden;
+}
+
+cite {
+    font-size: 90%;
+    color: #ddd8d8;
+    margin-top: 25px;
+}
+
+cite img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+
+
+
+/*--------------------------------------------------------
+                SECTION ON THE SIGNUP
+/*--------------------------------------------------------*/
+
+.section-signup {
+    margin-top: 10px;
+}
+
+.section-signup-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.section-signup-title:after {
+    display: block;
+    background-color: rgb(213, 0, 0);
+    width: 120px;
+    height: 2px;
+    content: " ";
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.list-signup {
+    text-align: left;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+    margin-left: 5%;
+}
+
+.signup-title {
+    background-color: rgb(220, 220, 220, 0.3);
+    margin: 10px 0px 20px 0px;
+    padding: 20px 20px;
+}
+
+.list-signup h2 {
+    color: rgb(213, 0, 0);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.list-signup ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.list-signup li {
+    margin-bottom: 10px;
+}
+
+.list-signup ion-icon {
+    color: rgb(213, 0, 0);
+    margin-right: 4px;
+    font-size: 100%;
+    line-height: 100%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.list-signup p {
+    display: inline-block;
+}
+
+.signup-btn-premium,
+.signup-btn-other {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 20px;
+    border-top: 1px solid #d4d4d4;
+}
+
+.signup-btn-premium a:link,
+.signup-btn-premium a:visited,
+.signup-btn-other a:link,
+.signup-btn-other a:visited {
+    text-decoration: none;
+    padding: 5px 30px;
+    font-weight: 600px;
+    border-radius: 25px;
+    display: inline-block;
+    border: 1px solid rgb(213, 0, 0);
+    margin-left: 25%;
+}
+
+.signup-btn-premium a:link,
+.signup-btn-premium a:visited {
+    background-color: rgb(213, 0, 0);
+    color: white;
+}
+
+.signup-btn-premium a:hover,
+.signup-btn-premium a:active {
+    background-color: rgb(187, 0, 0);
+    border: 1px solid rgb(187, 0, 0);
+}
+
+.signup-btn-other a:link,
+.signup-btn-other a:visited {
+    color: rgb(213, 0, 0);
+}
+
+.signup-btn-other a:hover,
+.signup-btn-other a:active {
+    background-color: rgb(213, 0, 0);
+    color: white;
+}
+
+
+
+
+/*--------------------------------------------------------
+            SECTION ON THE CONTACT FORM
+/*--------------------------------------------------------*/
+
+.section-contacts h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.section-contacts h2:after {
+    display: block;
+    background-color: rgb(213, 0, 0);
+    width: 120px;
+    height: 2px;
+    content: " ";
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.form-contact {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form-contact input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+}
+
+.section-contacts input[type="checkbox"] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+.section-contacts button {
+    background-color: rgb(213, 0, 0);
+    border: 1px solid rgb(213, 0, 0);
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 100%;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: white;
+}
+
+.section-contacts button:hover {
+    background-color: rgb(187, 0, 0);
+    border: 1px solid rgb(187, 0, 0);
+}
+
+.list-label {
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.list-label-find {
+    margin-top: 18px;
+    margin-bottom: 18px
+}
+
+.list-label-letter {
+    margin-top: 12px;
+    margin-bottom: 12px
+}
+
+
+
+/*--------------------------------------------------------
+                    FOOTER
+/*--------------------------------------------------------*/
+
+footer {
+    background-color: #D3D3D3;
+    padding: 40px;
+    font-size: 80%;
+}
+
+.list-nav {
+    float: left;
+}
+
+.list-social {
+    float: right;
+}
+
+.list-nav,
+.list-social {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.list-nav li,
+.list-social li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.list-nav li:last-child,
+.list-social li:last-child {
+    margin-right: 0;
+}
+
+.list-social ion-icon {
+    font-size: 24px;
+    color: black;
+    transition: color 0.2s;
+}
+
+.list-nav a:link,
+.list-nav a:visited {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+}
+
+.list-nav a:hover,
+.list-nav a:active {
+    border-bottom: 2px solid rgb(213, 0, 0);
+}
+
+footer p {
+    color: black;
+    text-align: center;
+    font-size: 90%;
+}
+
+.ion-social-facebook:hover {
+    color: #1877F2;
+}
+
+.ion-social-twitter:hover {
+    color: #1DA1F2;
+}
+
+.ion-social-whatsapp:hover {
+    color: #25D366;
+}
+
+.ion-social-instagram:hover {
+    color: #C32AA3;
+}
+
+
+
+/*--------------------------------------------------------
+                    STICKY NAVIGATION
+/*--------------------------------------------------------*/
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #e6e6e6;
+    z-index: 9999;
+}
+
+.sticky-nav .main-navigation li a:link,
+.sticky-nav .main-navigation li a:visited {
+    padding: 20px 0;
+    color: black;
+}
+
+.sticky-nav .logo-img {
+    height: 60px;
+    width: auto;
+    float: left;
+    margin-top: 4px;
+    border-radius: 8px;
+}
+
+.sticky-nav .main-navigation {
+    margin-top: 22px;
+}
+
+/*-------------------------- HAMBURGER BUTTON ON RIGHT TOP CORNER-----------------------------*/
+
+.navigation-menu {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: white;
+    display: none;
+}
+
+
+/*--------------------------------------------------------
+                    OFFER SECTION
+/*--------------------------------------------------------*/
+.section-offer {
+    background: linear-gradient(to bottom right, #118DF0, #FF304F);
+    padding: 30px 100px 40px 100px;
+}
+
+.section-offer h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.section-offer h2:after {
+    display: block;
+    background-color: rgb(213, 0, 0);
+    width: 120px;
+    height: 2px;
+    content: " ";
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+/*---------- CONTAINER FOR OFFER CARD ----------*/
+.offer-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---------- OFFER CARD ----------*/
+.offer-container {
+    display: flex;
+    overflow: hidden;
+    width: 720px;
+    max-height: 300px;
+    max-width: 800px;
+    border-radius: 4px;
+    box-shadow: 0 30px 80px 10px rgba(0, 0, 0, 0.2)
+}
+
+/* IMAGE CONTAINER
+----------------------------------*/
+.offer-book {
+    flex: 0 1 40%;
+}
+
+.offer-book-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* BOOK PRICE CONTAINER
+----------------------------------*/
+.offer-price {
+    flex: 0 1 60px;
+    background: linear-gradient(to bottom, #DC143C, #4073FF);
+    writing-mode: vertical-rl;
+    font-size: 120%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BOOK DESCRIPTION CONTAINER
+----------------------------------*/
+.offer-content {
+    flex: 1;
+    background-color: white;
+    padding: 16px 2px 2px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------- BOOK DESCRIPTION ----------*/
+.offer-contents {
+    font-size: 80%;
+    margin-top: 25px;
+}
+
+/*---------- BOOK TITLE ----------*/
+.offer-content-bookName {
+    text-transform: uppercase;
+    font-size: 110%;
+    margin: 20px 4px 2px 0px;
+}
+
+/*---------- BOOK GENRE AND LANGUAGE TAGS ----------*/
+.offer-content-tags {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 80%;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 100px;
+}
+
+.offer-content-genre,
+.offer-content-lang {
+    padding: 2px 4px;
+    border-radius: 80px;
+    margin-left: 5px;
+}
+
+.offer-content-genre {
+    background-color: #118DF0;
+}
+.offer-content-lang {
+    background-color: #FF304F;
+}
+
+/*---------- FEATURES OF OFFER : RATING AND DELIVERY ----------*/
+.offer-content-features {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.offer-content-feature {
+    font-size: 100%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/*---------- ICON ----------*/
+.offer-content-icon {
+    margin-right: 5px;
+}
